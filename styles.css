@@ -1,3 +1,185 @@
+.story h2 {
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 2em;
+}
+.story-desc {
+  color: #fff;
+  font-size: 1.15em;
+  line-height: 1.7;
+  letter-spacing:1.5;
+  margin-top: 18px;
+}
+.impact-story {
+  background: #77ABBB;
+  letter-spacing: 1.5px;
+  padding: 32px 0;
+  border-radius: 12px;
+}
+
+.impact-content p {
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  color: #FFC907;
+  max-width: none;
+  width: 100%;
+  margin-right: 8px;
+}
+.impact-content {
+  display: flex;
+  align-items: flex-start;
+    margin-left: 0;
+}
+
+.impact-image.left-align {
+  width: 480px;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+.impact-story {
+  padding: 10px 0 10px 0;
+  min-height: 480px;
+}
+  min-height: 540px; /* Make section taller than the image */
+.impact-image.left-align {
+  display: block;
+  width: 440px;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+.hero-content {
+  margin-left: 48px;
+  text-align: left;
+  margin-top: -32px; /* Shift content slightly up */
+}
+.cta-btn {
+  display: inline-block;
+  text-align: left;
+  margin-right: auto;
+  margin-top: 24px;
+  min-width: 0;
+  background: #FFC907;
+  color: #fff;
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-size: 1.65em;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  padding: 24px 18px; /* Make button even taller */
+  margin-left: 48px; /* Shift button further to the right */
+  border-radius: 10px;
+  margin-top: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cta-btn:hover {
+  background: #FFD84A;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+/* Move hero text higher on the image */
+.hero-overlay {
+  position: relative;
+  top: -40px; /* Move text up on the hero image */
+}
+/* About Us button styles */
+.about-btn {
+  color: #FFC907 !important; /* Black font color */
+  background: #888888ab; /* Very light grey background */
+  margin-left: 0;
+  margin-right: 12px;
+  letter-spacing: 1.5px;
+  border: none;
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  text-decoration: none;
+    margin-right: 8px;
+    text-align: left;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  color: #2E9DF7;
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-size: 1em;
+  margin-left: 24px;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: #f4f8fb;
+}
+
+.sign-in-btn {
+  background: #FFC907;
+  color: #ffffff;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  margin-left: auto;
+  margin-right: 18px;
+  text-decoration: none;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.sign-in-btn:hover {
+  background: #FFD84A;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  padding: 18px 0 18px 0;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+}
+
+.nav-logo {
+  height: 38px;
+  width: auto;
+  margin-left: 18px;
+}
+/* Navigation Bar Styles */
+.navbar {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 18px 0 18px 0; /* Increase navbar height slightly */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+}
+
+.nav-logo {
+  height: 26px;   /* Make logo much smaller */
+  width: auto;
+  margin-left: 22px;
+}
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
@@ -26,10 +208,10 @@ Fonts:
 /* Set up the main font and background color for the whole page */
 body {
   background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', Arial, sans-serif; /* Use Proxima Nova for all text */
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #FFC907; /* Set default font color to yellow */
 }
 
 /* Add a slight shadow and rounded corners to each section for depth */
@@ -42,53 +224,72 @@ section {
 }
 
 /* Hero Section Styles */
+
 .hero {
   position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  /* Use the Zimbabwe image from the img folder */
+  background-image: url('img/Zimbabwe_2022_CG-7710.jpg');
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   color: #fff;                 /* White text for contrast */
   text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
+  padding: 130px 0 130px 0;    /* Remove all side padding, only top and bottom */
+  min-height: 440px;           /* Slightly taller minimum height */
   border-radius: 0 0 16px 16px; /* Only round bottom corners */
 
   /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
   background-blend-mode: darken;
   background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
 }
 
 /* Make the headline bold and modern */
 .hero h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 5.5em;
+  font-weight: normal;
+  letter-spacing: 1.5px;
   margin-bottom: 15px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
 }
 
 /* Style the subheadline */
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
   margin-top: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
 }
 
 /* Story Section Styles */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
+  background-color: #FFC907; /* Secondary Light Blue */
   color: #222;
   text-align: center;
   padding: 30px 20px;
 }
 
 /* Add accent color to section headings */
+
+h1, h2, h3, h4, h5, h6, p, a, span, .brand {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  color: #FFC907;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 48px; /* Increase left padding even more for greater side margin */
+}
+
+/* Only increase line spacing for the subheading text */
+.hero-desc {
+  line-height: 1.6;
+}
+}
+
+/* Remove bold from h2, keep margin */
+/* Remove bold from h2, keep margin */
 h2 {
-  color: #2E9DF7; /* Primary blue */
   margin-top: 0;
-  font-weight: bold;
+  font-weight: normal;
+}
 }
 
 /* Call-to-Action Section Styles */
@@ -102,23 +303,25 @@ h2 {
 /* Style the impact story image */
 .impact-image {
   width: 100%;
-  max-width: 320px;
+  max-width: 600px;
   border-radius: 10px;
   margin-bottom: 16px;
+  margin-left: 2px;
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
 }
 
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
+  background-color: #FFC907; /* Green */
   color: #fff;
   padding: 14px 32px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.8em;
   margin-top: 18px;
+  letter-spacing: 1.5;
   box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
   transition: background 0.3s, transform 0.2s;
   border: none;
@@ -127,7 +330,7 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #FFC907; /* Dark Green */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
